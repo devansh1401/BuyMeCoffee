@@ -12,5 +12,9 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "hardhat": "^2.18.3"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
+    "dotenv": "^16.3.1"
   }
 }

@@ -6,7 +6,7 @@ async function main(){
   
     // Deploy the contract.
     await buyMeACoffee.waitForDeployment();
-    console.log("BuyMeACoffee deployed to:", buyMeACoffee.address);
+    console.log("BuyMeACoffee deployed to:", buyMeACoffee.target);
 
 }
 

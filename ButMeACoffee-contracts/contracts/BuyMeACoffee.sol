@@ -4,6 +4,8 @@ pragma solidity ^0.8.9;
 // Uncomment this line to use console.log
 // import "hardhat/console.sol";
 
+// BuyMeACoffee deployed to: 0xbaCAcaF853fF31E765B5907E1c9c7b074751A1d5
+
  contract BuyMeACoffee{
     //event to emit whem a memo is created. 
     event NewMemo(
@@ -13,7 +15,7 @@ pragma solidity ^0.8.9;
     string message
     );
 
-     // Memo Struct
+     // Memo Struct ❤️
   struct Memo{
     address from;
     uint256 timestramp;

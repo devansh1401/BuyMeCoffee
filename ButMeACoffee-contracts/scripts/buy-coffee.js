@@ -6,6 +6,7 @@
 // global scope, and execute the script.
 const hre = require("hardhat");
 
+
 // Returns the Ether balance of a given address.
 async function getBalance(address) {
   const balanceBigInt = await hre.ethers.provider.getBalance(address);
@@ -42,10 +43,10 @@ async function main() {
 
   // Deploy the contract.
   await buyMeACoffee.waitForDeployment();
-  console.log("BuyMeACoffee deployed to:", buyMeACoffee.address);
+  console.log("BuyMeACoffee deployed to:", buyMeACoffee.target);
 
   // Check balances before the coffee purchase.
-  const addresses = [owner.address, tipper.address, buyMeACoffee];
+  const addresses = [owner.address, tipper.address, buyMeACoffee.target];
   console.log("== start ==");
   await printBalances(addresses);
   
